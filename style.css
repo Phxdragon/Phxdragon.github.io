@@ -160,13 +160,40 @@ li:nth-child(4) {
 
 /* Header Styling */
 header {
+    background-color: black;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background: black;
-    padding: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* Logo */
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+/* Navigasi */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Link Navigasi */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 header .container {
     display: flex;
     justify-content: flex-end;
@@ -181,6 +208,7 @@ nav {
     gap: 10px;
     text-align: center;
 }
+
 
 nav a {
     color: white;
@@ -958,5 +986,23 @@ footer {
         padding: 10px;
     }
 }
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
 
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+        justify-content: center;
+    }
+}
 }
