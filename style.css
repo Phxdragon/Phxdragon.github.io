@@ -161,16 +161,13 @@ li:nth-child(4) {
 
 /* Header Styling */
 header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    position: fixed;
-    top: 0;
+    position: fixed;  /* Membuat header tetap di posisi atas */
+    top: 0;           /* Menempelkannya di bagian atas */
     left: 0;
-    z-index: 1000;
+    width: 100%;      /* Memastikan header mencakup seluruh lebar */
+    background-color: black; /* Warna background agar tetap terlihat */
+    z-index: 1000;    /* Memastikan header tetap di atas elemen lain */
+    padding: 10px 0;
 }
 
 header .container {
@@ -181,9 +178,7 @@ header .container {
 
 
 nav {
-    background-color: black;
     text-align: center;
-    padding: 10px 0;
 }
 
 nav a {
@@ -195,16 +190,17 @@ nav a {
     gap: 5px;
 }
 
-n/* Styling List Menu */
+/* Styling List Menu */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Memberi jarak antar menu */
+    gap: 15px;
     flex-wrap: wrap;
     padding: 0;
 }
+
 
 /* Styling Link */
 nav ul li {
@@ -223,8 +219,14 @@ nav ul li a {
 }
 
 /* Styling Ikon */
-nav ul li a i {
-    font-size: 16px; /* Mengecilkan ikon */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
@@ -954,17 +956,17 @@ footer {
     /* Untuk tampilan yang lebih kecil */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Menjadikan menu vertikal */
+        flex-direction: column;
         gap: 8px;
     }
 
     nav ul li a {
-        font-size: 12px; /* Mengecilkan ukuran teks */
+        font-size: 12px;
         padding: 5px;
     }
 
     nav ul li a i {
-        font-size: 14px; /* Mengecilkan ikon */
+        font-size: 14px;
     }
 }
 
