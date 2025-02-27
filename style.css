@@ -955,11 +955,77 @@ footer {
         justify-content: center;
     }
 
-    /* Untuk tampilan yang lebih kecil */
-@media screen and (max-width: 768px) {
+        /* Untuk tampilan yang lebih kecil */
+        @media screen and (max-width: 768px) {
+            nav {
+                position: absolute; /* Pastikan tetap absolute */
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: black; /* Sesuaikan dengan desain */
+                z-index: 1000; /* Pastikan muncul di atas */
+            }
+        
+            nav ul {
+                flex-direction: column;
+                gap: 8px;
+                align-items: center; /* Agar item rata tengah */
+            }
+        
+            nav ul li a {
+                font-size: 12px;
+                padding: 5px;
+            }
+        
+            nav ul li a i {
+                font-size: 14px;
+            }
+        }
+
+        /* Untuk layar kecil termasuk iPhone 4S - iPhone 15 */
+@media screen and (max-width: 480px) { /* Untuk iPhone 4S - iPhone SE */
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
     nav ul {
         flex-direction: column;
-        gap: 8px;
+        gap: 5px;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    nav ul li a i {
+        font-size: 12px;
+    }
+}
+
+/* Untuk iPhone 6, 7, 8, X, 11, 12 Mini, SE (2020, 2022) */
+@media screen and (max-width: 600px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 1000;
+        padding: 12px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
     }
 
     nav ul li a {
@@ -969,6 +1035,34 @@ footer {
 
     nav ul li a i {
         font-size: 14px;
+    }
+}
+
+/* Untuk iPhone 12, 13, 14, 15 (Pro & Pro Max) */
+@media screen and (max-width: 820px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 1000;
+        padding: 14px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    nav ul li a i {
+        font-size: 16px;
     }
 }
 
