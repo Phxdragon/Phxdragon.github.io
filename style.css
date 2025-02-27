@@ -161,19 +161,16 @@ li:nth-child(4) {
 
 /* Header Styling */
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color: black;
     padding: 10px 10px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease-in-out;
     z-index: 1000;
 }
 
-.header-hidden {
-    transform: translateY(-100%);
-}
 
 header .container {
     display: flex;
@@ -972,34 +969,6 @@ footer {
 
     nav ul li a i {
         font-size: 14px;
-    }
-}
-/* iPhone 4s (320px) hingga iPhone 15 (430px) */
-@media screen and (max-width: 320px) { /* iPhone 4s */
-    header {
-        height: 50px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 375px) { /* iPhone 6, 7, 8, SE */
-    header {
-        height: 55px;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 414px) { /* iPhone XR, 11, 12, 13, 14 */
-    header {
-        height: 40px;
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 430px) { /* iPhone 15 Pro Max */
-    header {
-        height: 55px;
-        font-size: 18px;
     }
 }
 
