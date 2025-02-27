@@ -957,30 +957,33 @@ footer {
 
         /* Untuk tampilan yang lebih kecil */
         @media screen and (max-width: 768px) {
-            nav {
-                position: absolute; /* Pastikan tetap absolute */
-                top: 0;
-                left: 0;
-                width: 100%;
-                background-color: black; /* Sesuaikan dengan desain */
-                z-index: 1000; /* Pastikan muncul di atas */
-            }
-        
-            nav ul {
-                flex-direction: column;
-                gap: 8px;
-                align-items: center; /* Agar item rata tengah */
-            }
-        
-            nav ul li a {
-                font-size: 12px;
-                padding: 5px;
-            }
-        
-            nav ul li a i {
-                font-size: 14px;
-            }
-        }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 1000;
+        padding: 5px 0; /* Kurangi padding agar lebih kecil */
+        height: 30px; /* Sesuaikan tinggi navbar */
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 10px; /* Perkecil font */
+        padding: 3px 5px; /* Perkecil padding */
+    }
+
+    nav ul li a i {
+        font-size: 12px; /* Perkecil ukuran ikon */
+    }
+}
 
         /* Untuk layar kecil termasuk iPhone 4S - iPhone 15 */
 @media screen and (max-width: 480px) { /* Untuk iPhone 4S - iPhone SE */
@@ -1019,7 +1022,8 @@ footer {
         width: 100%;
         background-color: black;
         z-index: 1000;
-        padding: 12px 0;
+        padding: 5px 0; /* Kurangi padding agar lebih kecil */
+        height: 30px; /* Sesuaikan tinggi navbar */
     }
 
     nav ul {
@@ -1047,7 +1051,9 @@ footer {
         width: 100%;
         background-color: black;
         z-index: 1000;
-        padding: 14px 0;
+        padding: 5px 0; /* Kurangi padding agar lebih kecil */
+        height: 30px; /* Sesuaikan tinggi navbar */
+
     }
 
     nav ul {
