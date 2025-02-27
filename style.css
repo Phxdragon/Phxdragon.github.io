@@ -1166,9 +1166,29 @@ footer {
     .hero-text {
         font-size: 10vw;
         padding: 10px;
+        padding-top: 50px; /* Sesuaikan dengan tinggi navbar di breakpoint ini */
+    }
+}
+/* Navbar untuk layar kecil (iPhone 4S - iPhone SE) */
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding-top: 40px; /* Sesuaikan dengan tinggi navbar di breakpoint ini */
     }
 }
 
+/* Navbar untuk iPhone 6, 7, 8, X, 11, 12 Mini, SE (2020, 2022) */
+@media screen and (max-width: 600px) {
+    .hero-section {
+        padding-top: 45px; /* Sesuaikan dengan tinggi navbar di breakpoint ini */
+    }
+}
+
+/* Navbar untuk iPhone 12, 13, 14, 15 (Pro & Pro Max) */
+@media screen and (max-width: 820px) {
+    .hero-section {
+        padding-top: 55px; /* Sesuaikan dengan tinggi navbar di breakpoint ini */
+    }
+}
 
 /* Perbaikan Teks Hero */
 .hero-text {
@@ -1178,13 +1198,4 @@ footer {
     color: white;
     padding: 20px;
     line-height: 1.2;
-}
-
-@media screen and (max-width: 768px) {
-    .hero-text {
-        font-size: 10vw;
-        padding: 10px;
-    }
-}
-
 }
