@@ -160,15 +160,35 @@ li:nth-child(4) {
 
 /* Header Styling */
 header {
-    background: #000;
-    color: #fff;
-    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    padding: 10px 0;
 }
 
 header .container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 nav ul {
@@ -909,4 +929,34 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    /* Untuk tampilan yang lebih kecil */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    nav a {
+        font-size: 12px;
+    }
+}
+
+/* Perbaikan Teks Hero */
+.hero-text {
+    text-align: center;
+    font-size: 8vw;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text {
+        font-size: 10vw;
+        padding: 10px;
+    }
+}
+
 }
